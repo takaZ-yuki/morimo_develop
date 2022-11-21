@@ -1,0 +1,14 @@
+<html>
+<input id="button" type="button" value="ボタン"/>
+<div id="hidden"> こんにちは </div>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script>
+$(function(){
+    $("#hidden").css("display", "none");
+    $("#button").click(function(){
+        $("#hidden").show();
+    });
+});
+</script>
+</html>

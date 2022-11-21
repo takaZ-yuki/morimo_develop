@@ -1,0 +1,15 @@
+<html>
+<title>選択してください</title>
+<p>
+<input type="radio" name="q1" value="Yes"> はい
+<input type="radio" name="q1" value="No"> いいえ
+</p>
+
+<input id="button" type="button" value="ボタン"/>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script>
+$("#button").click(function(){
+  console.log($("input[name='q1']:checked").val());
+});
+</script>
+</html>
